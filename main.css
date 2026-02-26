@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+main {
+  margin-top: 60px;
+}
+
+#profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.home-container .anim {
+  animation-delay: 0.4s;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.about {
+  max-width: 50%;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.skills-container {
+  color: black;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.skills-container .anim {
+  animation-delay: 0.6s;
+}
+
+h2 {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+  border-bottom-left-radius: 0px;
+}
+
+h2:hover {
+  background-color: rgb(215, 215, 215);
+  border-bottom-left-radius: 5px;
+}
+
+.projects-container {
+  padding: 50px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.projects-container .anim {
+  animation-delay: 0.8s;
+}
+
+.projects-container a {
+  text-decoration: none;
+  padding: 20px 5px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  background-color: rgb(53, 107, 254);
+  color: white;
+  flex: 0 0 25%;
+  text-align: center;
+  transition: all 0.5s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.projects-container a:hover {
+  background-color: rgb(39, 95, 248);
+  border-bottom-left-radius: 5px;
+  transform: translateY(1.7px) scale(1.05);
+}
+
+.projects-container a:active {
+  background-color: rgb(58, 110, 250);
+}
+
+.contact-container {
+  background-color: white;
+  height: 17vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container .anim {
+  animation-delay: 1s;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 4px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.copy-right {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.copy-right .anim {
+  animation-delay: 1.2s;
+}
+
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media(max-width:600px) {
+  main {
+    margin-top: 40px;
+  }
+
+  #profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home-container {
+    height: 75vh;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  .about {
+    max-width: 95%;
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+
+  .skills-container {
+    height: 18vh;
+    gap: 15px;
+  }
+
+  h2 {
+    padding: 3px 7px;
+    font-size: 20px;
+  }
+
+  .projects-container {
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-container a {
+    padding: 15px 10px;
+  }
+
+  .contact-container {
+    height: 10vh;
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    margin: 0px 5px;
+  }
+
+  .copy-right {
+    height: 7vh;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    margin-top: 50px;
+  }
+
+  #profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .home-container {
+    height: 75vh;
+  }
+
+  h1 {
+    font-size: 1.9em;
+    margin-bottom: 12px;
+  }
+
+  .about {
+    max-width: 95%;
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+
+  .skills-container {
+    height: 18vh;
+    gap: 15px;
+  }
+
+  h2 {
+    padding: 3px 7px;
+    font-size: 20px;
+  }
+
+  .projects-container {
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-container a {
+    padding: 15px 10px;
+  }
+
+  .contact-container {
+    height: 10vh;
+  }
+
+  .fa {
+    padding: 12px;
+    font-size: 33px;
+    width: 43px;
+    margin: 0px 5px;
+  }
+
+  .copy-right {
+    height: 7vh;
+    font-size: 13px;
+  }
+}
