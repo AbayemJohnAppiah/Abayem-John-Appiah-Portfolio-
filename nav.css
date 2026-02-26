@@ -3,7 +3,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 20px 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +14,6 @@ nav {
 #logo {
   width: 150px;
   height: 40px;
-  margin-left: 20px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: transparent;
@@ -49,14 +48,14 @@ ul {
   gap: 10px;
 }
 
-ul .anim {
-  animation-delay: 0.2s;
-}
-
 .anim {
   opacity: 0;
   transform: translateY(30px);
   animation: moveup 0.5s linear forwards;
+}
+
+nav.anim {
+  animation-delay: 0.1s;
 }
 
 @keyframes moveup {
@@ -83,7 +82,7 @@ ul .anim {
   }
 
   nav a {
-    padding: 5px 8px;
-    font-size: 14px;
+    padding: 4px 6px;
+    font-size: 12px;
   }
 }
