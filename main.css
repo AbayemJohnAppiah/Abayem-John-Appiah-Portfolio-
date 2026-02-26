@@ -11,8 +11,8 @@ main {
 }
 
 #profile-pic {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   margin-bottom: 15px;
   background-size: cover;
@@ -20,6 +20,7 @@ main {
   background-repeat: no-repeat;
   border: 3px solid white;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  margin-top: 50px;
 }
 
 .home-container {
@@ -29,10 +30,6 @@ main {
   justify-content: center;
   height: 80vh;
   text-align: center;
-}
-
-.home-container .anim {
-  animation-delay: 0.4s;
 }
 
 h1 {
@@ -48,19 +45,6 @@ h3 {
   max-width: 50%;
   margin-top: 20px;
   line-height: 1.7;
-}
-
-.skills-container {
-  color: black;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.skills-container .anim {
-  animation-delay: 0.6s;
 }
 
 h2 {
@@ -81,10 +65,6 @@ h2:hover {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-}
-
-.projects-container .anim {
-  animation-delay: 0.8s;
 }
 
 .projects-container a {
@@ -116,10 +96,6 @@ h2:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.contact-container .anim {
-  animation-delay: 1s;
 }
 
 .fa {
@@ -171,14 +147,114 @@ h2:hover {
   color: white;
 }
 
-.copy-right .anim {
-  animation-delay: 1.2s;
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 0 30%;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.progress {
+  width: 100%;
+  height: 12px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #4a5bdc;
+  width: 0;
+  transition: width 1s ease;
+}
+
+hr {
+  width: 300px;
+  height: 4px;
+  background: blue;
+  border: none;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+@keyframes growLine {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 300px;
+  }
+}
+
+.line1-anim {
+  animation: growLine 1s ease 0.3s forwards;
+}
+
+.line2-anim {
+  animation: growLine 1s ease 0.4s forwards;
+}
+
+.line3-anim {
+  animation: growLine 1s ease 0.5s forwards;
 }
 
 .anim {
   opacity: 0;
   transform: translateY(30px);
   animation: moveup 0.5s linear forwards;
+}
+
+.home-container.anim {
+  animation-delay: 0.4s;
+}
+
+section div.anim {
+  animation-delay: 0.2s;
+}
+
+h1.anim {
+  animation-delay: 0.3s;
+}
+
+h3.anim {
+  animation-delay: 0.3s;
+}
+
+.about.anim {
+  animation-delay: 0.4s;
+}
+
+.skills-container.anim {
+  animation-delay: 0.6s;
+}
+
+.projects-container.anim {
+  animation-delay: 0.8s;
+}
+
+.contact-container.anim {
+  animation-delay: 1s;
+}
+
+.copy-right.anim {
+  animation-delay: 1s;
 }
 
 @keyframes moveup {
@@ -188,18 +264,15 @@ h2:hover {
   }
 }
 
-@media(max-width:600px) {
+@media(max-width:576px) {
   #profile-pic {
-    margin-top: 50px;
-    width: 100px;
-    height: 100px;
-    background-size: 100% 100%;
+    width: 180px;
+    height: 180px;
   }
 
   .home-container {
-    height: 0vh;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-bottom: 10px;
   }
 
   h1 {
@@ -211,8 +284,8 @@ h2:hover {
     max-width: 95%;
     margin-top: 15px;
     line-height: 1.5;
-    height: 50vh;
-
+    height: 35vh;
+    margin-bottom: 10px;
   }
 
   .skills-container {
@@ -258,14 +331,9 @@ h2:hover {
   }
 
   #profile-pic {
-    width: 150px;
-    height: 150px;
-  }
-
-  #profile-pic {
-    margin-top: 50px;
-    width: 150px;
-    height: 150px;
+    margin-top: 80px;
+    width: 180px;
+    height: 180px;
     background-size: 100% 100%;
   }
 
