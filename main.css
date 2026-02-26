@@ -11,11 +11,15 @@ main {
 }
 
 #profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  object-fit: cover;
   margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 .home-container {
@@ -186,15 +190,16 @@ h2:hover {
 
 @media(max-width:600px) {
   #profile-pic {
-    width: 120px;
-    height: 120px;
-    margin-top: 80px;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
   }
 
   .home-container {
     height: 0vh;
     margin-top: 70px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   h1 {
@@ -255,6 +260,13 @@ h2:hover {
   #profile-pic {
     width: 150px;
     height: 150px;
+  }
+
+  #profile-pic {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    background-size: 100% 100%;
   }
 
   .home-container {
