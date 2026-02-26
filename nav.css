@@ -11,14 +11,16 @@ nav {
   z-index: 1000;
 }
 
-nav img {
+#logo {
   width: 150px;
   height: 40px;
-  margin-right: 20px;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-color: transparent;
 }
 
-nav img.anim {
+.anim {
   animation-delay: 0.2s;
 }
 
