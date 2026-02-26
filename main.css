@@ -185,17 +185,16 @@ h2:hover {
 }
 
 @media(max-width:600px) {
-  main {
-    margin-top: 40px;
-  }
-
   #profile-pic {
     width: 120px;
     height: 120px;
+    margin-top: 80px;
   }
 
   .home-container {
-    height: 75vh;
+    height: 0vh;
+    margin-top: 70px;
+    margin-bottom: 50px;
   }
 
   h1 {
@@ -207,6 +206,8 @@ h2:hover {
     max-width: 95%;
     margin-top: 15px;
     line-height: 1.5;
+    height: 50vh;
+
   }
 
   .skills-container {
