@@ -3,7 +3,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
   background-color: white;
+  ;
 }
 
 main {
@@ -45,6 +49,10 @@ h3 {
   max-width: 50%;
   margin-top: 20px;
   line-height: 1.7;
+}
+
+p {
+  color: rgb(74, 74, 74);
 }
 
 h2 {
@@ -142,52 +150,64 @@ h2:hover {
   display: flex;
   justify-content: center;
   height: 10vh;
-  background-color: black;
+  background-color: rgb(53, 107, 254);
   text-align: center;
   color: white;
 }
 
 .skills-container {
+  max-width: 450px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.skill-top {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 20vh;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  justify-content: space-between;
 }
 
 .skill {
   margin-bottom: 10px;
-  text-align: center;
-  padding: 0 30%;
-}
-
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  font-size: 15px;
 }
 
 .progress {
   width: 100%;
-  height: 12px;
+  height: 8px;
   background: #ddd;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
 .progress-bar {
   height: 100%;
-  background: #4a5bdc;
-  width: 0;
-  transition: width 1s ease;
+  background: rgb(53, 107, 254);
+  border-radius: 20px;
+  animation: fill 2s ease forwards;
+}
+
+/* Set percentages */
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 75%;
+}
+
+.js {
+  width: 40%;
+}
+
+@keyframes fill {
+  from {
+    width: 0;
+  }
 }
 
 hr {
   width: 300px;
   height: 4px;
-  background: blue;
+  background: rgb(53, 107, 254);
   border: none;
   border-radius: 50%;
   margin: 20px auto;
@@ -204,17 +224,18 @@ hr {
 }
 
 .line1-anim {
-  animation: growLine 1s ease 0.3s forwards;
-}
-
-.line2-anim {
   animation: growLine 1s ease 0.4s forwards;
 }
 
-.line3-anim {
-  animation: growLine 1s ease 0.5s forwards;
+.line2-anim {
+  animation: growLine 1s ease 0.6s forwards;
 }
 
+.line3-anim {
+  animation: growLine 1s ease 0.8s forwards;
+}
+
+/* Animations */
 .anim {
   opacity: 0;
   transform: translateY(30px);
@@ -264,33 +285,35 @@ h3.anim {
   }
 }
 
-@media(max-width:576px) {
+/*media querie for mobile*/
+@media (max-width: 600px) {
+  main {
+    margin-top: 40px;
+  }
+
   #profile-pic {
     width: 180px;
     height: 180px;
-  }
-
-  .home-container {
-    margin-top: 50px;
-    margin-bottom: 10px;
+    background-size: 100% 100%;
   }
 
   h1 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    font-size: 1.9em;
+    margin-bottom: 12px;
   }
 
   .about {
     max-width: 95%;
-    margin-top: 15px;
-    line-height: 1.5;
-    height: 35vh;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: 1.6;
   }
 
   .skills-container {
     height: 18vh;
     gap: 15px;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px 0;
   }
 
   h2 {
@@ -299,7 +322,7 @@ h3.anim {
   }
 
   .projects-container {
-    padding: 20px 20px;
+    padding: 30px 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -313,32 +336,41 @@ h3.anim {
   }
 
   .fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 40px;
+    padding: 12px;
+    font-size: 33px;
+    width: 43px;
     margin: 0px 5px;
   }
 
   .copy-right {
     height: 7vh;
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  hr {
+    width: 200px;
+  }
+
+  @keyframes growLine {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 200px;
+    }
   }
 }
 
+/*media querie for tablet*/
 @media (max-width: 800px) {
   main {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   #profile-pic {
-    margin-top: 80px;
     width: 180px;
     height: 180px;
-    background-size: 100% 100%;
-  }
-
-  .home-container {
-    height: 75vh;
   }
 
   h1 {
