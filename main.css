@@ -32,7 +32,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+
   text-align: center;
 }
 
@@ -79,18 +79,17 @@ h2:hover {
   text-decoration: none;
   padding: 20px 5px;
   border-radius: 5px;
-  border-bottom-left-radius: 0;
   background-color: rgb(53, 107, 254);
   color: white;
   flex: 0 0 25%;
   text-align: center;
   transition: all 0.5s ease;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  margin-top: 15px;
 }
 
 .projects-container a:hover {
   background-color: rgb(39, 95, 248);
-  border-bottom-left-radius: 5px;
   transform: translateY(1.7px) scale(1.05);
 }
 
@@ -100,10 +99,23 @@ h2:hover {
 
 .contact-container {
   background-color: white;
-  height: 17vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#project,
+#skill,
+#contact {
+  font-family: 'Playfair Display', serif;
+  display: block;
+  color: rgb(39, 95, 248);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.projects-container h1 {
+  width: 100%;
 }
 
 .fa {
@@ -308,7 +320,7 @@ h3.anim {
   }
 
   .skills-container {
-    height: 18vh;
+
     gap: 15px;
     max-width: 300px;
     margin: auto;
@@ -322,16 +334,13 @@ h3.anim {
 
   .projects-container {
     padding: 30px 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .projects-container a {
     padding: 15px 10px;
-  }
-
-  .contact-container {
-    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    line-height: 20px;
   }
 
   .fa {
@@ -365,6 +374,7 @@ h3.anim {
 @media (max-width: 800px) {
   main {
     margin-top: 40px;
+    padding: 0 5px;
   }
 
   #profile-pic {
@@ -385,7 +395,6 @@ h3.anim {
   }
 
   .skills-container {
-    height: 18vh;
     gap: 15px;
   }
 
@@ -396,16 +405,17 @@ h3.anim {
 
   .projects-container {
     padding: 30px 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .projects-container a {
     padding: 15px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .contact-container {
-    height: 10vh;
+  #project {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .fa {
