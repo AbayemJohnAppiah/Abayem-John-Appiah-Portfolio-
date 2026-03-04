@@ -66,34 +66,55 @@ h2:hover {
   border-bottom-left-radius: 5px;
 }
 
-.projects-container {
-  padding: 50px 150px;
-  display: flex;
-  flex-wrap: wrap;
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   justify-content: center;
-  gap: 15px;
+  justify-items: center;
+  margin: 0 30%;
 }
 
-.projects-container a {
+.project-container a {
   text-decoration: none;
-  padding: 20px 5px;
-  border-radius: 5px;
-  background-color: rgb(53, 107, 254);
-  color: white;
-  flex: 0 0 25%;
+  color: rgb(39, 95, 248);
+}
+
+article {
+  height: 280px;
+  width: 280px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s;
+}
+
+article:hover {
+  border: 0.5px solid rgb(53, 107, 254);
+  transform: translateY(-2px) scale(1.03);
+}
+
+article img {
+  width: 280px;
+  height: 170px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+article p,
+h4 {
+  padding-top: 2px;
   text-align: center;
-  transition: all 0.5s ease;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  margin-top: 15px;
 }
 
-.projects-container a:hover {
-  background-color: rgb(39, 95, 248);
-  transform: translateY(1.7px) scale(1.05);
+article h4 {
+  margin: 0;
+  margin-bottom: 5px;
 }
 
-.projects-container a:active {
-  background-color: rgb(58, 110, 250);
+article p {
+  font-size: 12px;
+  padding: 0 5px;
 }
 
 .contact-container {
@@ -111,10 +132,6 @@ h2:hover {
   color: rgb(39, 95, 248);
   margin-bottom: 25px;
   text-align: center;
-}
-
-.projects-container h1 {
-  width: 100%;
 }
 
 .fa {
@@ -277,7 +294,7 @@ h3.anim {
   animation-delay: 0.6s;
 }
 
-.projects-container.anim {
+.project-container.anim {
   animation-delay: 0.8s;
 }
 
@@ -297,7 +314,7 @@ h3.anim {
 }
 
 /*media querie for mobile*/
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   main {
     margin-top: 40px;
   }
@@ -319,27 +336,15 @@ h3.anim {
   }
 
   .skills-container {
-
     gap: 15px;
     max-width: 300px;
     margin: auto;
-    padding: 20px 0;
+    padding: 20px;
   }
 
   h2 {
     padding: 3px 7px;
     font-size: 20px;
-  }
-
-  .projects-container {
-    padding: 30px 30px;
-  }
-
-  .projects-container a {
-    padding: 15px 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    line-height: 20px;
   }
 
   .fa {
@@ -367,13 +372,19 @@ h3.anim {
       width: 200px;
     }
   }
+
+  .project-container {
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
 }
 
 /*media querie for tablet*/
 @media (max-width: 800px) {
   main {
     margin-top: 40px;
-    padding: 0 5px;
+    padding: 0;
   }
 
   #profile-pic {
@@ -391,30 +402,19 @@ h3.anim {
     max-width: 95%;
     margin-top: 20px;
     line-height: 1.6;
+    padding: 0 5px;
   }
 
   .skills-container {
     gap: 15px;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
   }
 
   h2 {
     padding: 3px 7px;
     font-size: 20px;
-  }
-
-  .projects-container {
-    padding: 30px 30px;
-  }
-
-  .projects-container a {
-    padding: 15px 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  #project {
-    width: 100%;
-    margin-bottom: 10px;
   }
 
   .fa {
@@ -427,5 +427,34 @@ h3.anim {
   .copy-right {
     height: 7vh;
     font-size: 13px;
+    margin: 0;
+  }
+
+  .project-container {
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+
+  article {
+    height: 160px;
+    width: 160px;
+    margin-top: 5px;
+  }
+
+  article img {
+    width: 160px;
+    height: 100px;
+  }
+
+  article h4 {
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: 10px;
+  }
+
+  article p {
+    font-size: 8px;
+    padding: 0 4px;
   }
 }
