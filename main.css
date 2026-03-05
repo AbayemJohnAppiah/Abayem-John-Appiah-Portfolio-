@@ -298,6 +298,10 @@ h3.anim {
   animation-delay: 0.8s;
 }
 
+.project .anim {
+  animation-delay: 0.8s;
+}
+
 .contact-container.anim {
   animation-delay: 1s;
 }
