@@ -19,28 +19,19 @@
   <nav class="anim">
     <div id="logo"></div>
     <ul>
-      <li><a href="#home" title="Home">Home</a></li>
-      <li><a href="#skills" title="Skills">Skills</a></li>
-      <li><a href="#projects" title="Projects">Projects</a></li>
-      <li><a href="#contact" title="Contact">Contact</a></li>
+      <li><a href="#home" title="Home" id="navHome"></a></li>
+      <li><a href="#skills" title="Skills" id="navSkill"></a></li>
+      <li><a href="#projects" title="Projects" id="navProject"></a></li>
+      <li><a href="#contact" title="Contact" id="navContact"></a></li>
     </ul>
   </nav>
 
   <main>
     <section class="home-container anim" id="home">
       <div id="profile-pic" class="anim"></div>
-      <h1 class="anim">Abayem A. John</h1>
-      <h3 class="anim"><i>Web Application Programmer | Football Goalkeeper</i></h3>
-      <p class="about anim">I build fast, secure, and responsive web applications with clean code and modern
-        technologies. I
-        enjoy creating digital solutions that are simple to use and built to perform.
-        <br>
-        Beyond coding, I am a football goalkeeper. Just like in goal, I stay focused under pressure, react quickly, and
-        protect what matters. These skills shape how I approach problem-solving and teamwork in technology.
-        <br>
-        I am driven by performance, reliability, and great user experience. I love turning ideas—on the field and on the
-        screen—into solid results.
-      </p>
+      <h1 class="anim" id="myName"></h1>
+      <h3 class="anim" id="subName"></h3>
+      <p class="about anim" id="about"></p>
     </section>
     <hr class="line1-anim">
     <section class="skills-container anim" id="skills">
@@ -82,8 +73,7 @@
         <article>
           <img src="youtube.gif">
           <h4>Youtube</h4>
-          <p>Built a YouTube-style website using HTML for structure and CSS for styling.
-            Focused on layout positioning, clean design, and user interface development.</p>
+          <p id="youtubeAbout"></p>
         </article>
       </a>
 
@@ -91,8 +81,7 @@
         <article>
           <img src="gallery.gif">
           <h4>Gallery</h4>
-          <p>Built a personal gallery website with HTML, CSS, and JavaScript. Implemented a light and dark mode toggle
-            to enhance user experience.</p>
+          <p id="galleryAbout"></p>
         </article>
       </a>
 
@@ -100,9 +89,7 @@
         <article>
           <img src="calculator.gif">
           <h4>Calculator </h4>
-          <p>Built a calculator using HTML, CSS, and JavaScript.
-            Focused on clean layout, responsive design, and accurate calculation logic.
-          </p>
+          <p id="calculatorAbout"></p>
         </article>
       </a>
 
@@ -110,8 +97,7 @@
         <article>
           <img src="animation.gif">
           <h4>Animation Page</h4>
-          <p>Built an animation page using HTML and CSS.Focused on layout positioning, styling, and smooth CSS
-            animations.</p>
+          <p id="animationAbout"></p>
         </article>
       </a>
 
@@ -119,8 +105,7 @@
         <article>
           <img src="sigin-Screenshot.png">
           <h4>Sign-In </h4>
-          <p>Built a sign-in page using HTML and CSS.
-            Focused on clean layout, form structure, and modern styling.</p>
+          <p id="siginAbout"></p>
         </article>
       </a>
 
@@ -128,8 +113,7 @@
         <article>
           <img src="scrolling.gif">
           <h4>Scrolling Page</h4>
-          <p>Built a scrolling page using HTML and CSS.
-            Focused on clean layout, smooth scrolling, and user experience.</p>
+          <p id="scrollingAbout"></p>
         </article>
       </a>
 
@@ -146,8 +130,8 @@
         target="_blank"></a>
       <a href="https://wa.me/233549390655" class="fa fa-whatsapp" title="WhatsApp" target="_blank"></a>
     </section>
-    <div class="copy-right anim"> &#169; 2026 Abayem A. John. All rights reserved.</div>
-
+    <footer class="copy-right anim"> &#169; 2026 Abayem A. John. All rights reserved.
+    </footer>
   </main>
 
 </body>
