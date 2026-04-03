@@ -50,4 +50,4 @@ document.getElementById("siginAbout").innerHTML = 'Built a sign-in page using HT
 document.getElementById("scrollingAbout").innerHTML = 'Built a scrolling page using HTML and CSS. Focused on clean layout, smooth scrolling, and user experience.';
 
 /* Clock */
-document.getElementById("clock").innerHTML = 'Built a real-time clock using HTML, CSS,and JavaScript. Used JavaScript to update the time every second. This project strengthened my skills in event timing and dynamic content updates.';
+document.getElementById("clock").innerHTML = 'Built a real-time client-side clock with HTML, CSS, and JavaScript. It updates every second and improved my skills in timing and dynamic content.';
