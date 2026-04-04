@@ -68,7 +68,7 @@ article {
   height: 290px;
   width: 283px;
   margin-top: 10px;
-  border: 0.5px solid rgb(255, 255, 255);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   transition: transform 0.5s;
 }
