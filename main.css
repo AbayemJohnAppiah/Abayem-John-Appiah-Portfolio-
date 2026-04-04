@@ -74,7 +74,7 @@ article {
 }
 
 article:hover {
-  border: 0.5px solid rgb(53, 107, 254);
+  border: 1px solid rgb(53, 107, 254);
   transform: translateY(-2px) scale(1.03);
 }
 
